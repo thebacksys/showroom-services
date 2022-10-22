@@ -25,5 +25,5 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::post('newSalesHistory', 'SalesHistoryController@newSalesHistory');
 
     Route::post('newModel', 'VehicleModelController@store');
-    Route::put('updateModel/{vehicleModelId}', 'VehicleModelController@update');
+    Route::put('updateModel', 'VehicleModelController@update');
 });

@@ -61,6 +61,7 @@ class VehicleModelController extends Controller
     {
         try {
             $validator = Validator::make($request->all(), [
+                'vehicleModelId' => 'required|integer',
                 'vehicleBrandId' => 'required|integer',
                 'name' => 'required',
             ]);
